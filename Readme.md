@@ -35,7 +35,7 @@ The _lib_ [PublicaIO/react-native-pbkdf2](https://github.com/PublicaIO/react-nat
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import rnpbkdf2.PBKDF2;` to the imports at the top of the file
+  - Add `import rnpbkdf2.PBKDF2Package;` to the imports at the top of the file
   - Add `new PBKDF2Package()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
