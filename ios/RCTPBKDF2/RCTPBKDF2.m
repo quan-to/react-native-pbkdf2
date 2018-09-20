@@ -5,7 +5,7 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_METHOD(derivationKey:(NSString *)password salt:(NSString *)salt iterations:(nonnull NSNumber *)iterations
+RCT_EXPORT_METHOD(derivationKey:(NSString *)password salt:(NSString *)salt iterations:(nonnull int *)iterations
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject) {
     NSError *error = nil;
