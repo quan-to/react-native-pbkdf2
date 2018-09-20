@@ -13,7 +13,7 @@
     return hexStr;
 }
 
-+ (NSString *) derivationKey:(NSString *)password salt: (NSString *)salt iterations: (nonnull NSNumber *)iterations {
++ (NSString *) derivationKey:(NSString *)password salt: (NSString *)salt iterations: (nonnull int *)iterations {
     // Data of String to generate Hash key(hexa decimal string).
     NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
     NSData *saltData = [salt dataUsingEncoding:NSUTF8StringEncoding];
